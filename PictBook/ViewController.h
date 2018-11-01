@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
-
+- (void) actionBarButtonNextTouched: (UIButton*) sender;
+- (void) actionBarButtonPreviousTouched: (UIButton*) sender;
 @end
 
