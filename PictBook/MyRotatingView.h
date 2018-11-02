@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "MyScrollView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -21,9 +22,6 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain)  UIBarButtonItem *barButtonPrevious;
 @property (nonatomic, retain)  UISlider *sliderZoom;
 @property (nonatomic, retain)  UIScrollView *scrollViewImage;
-
-
-
 
 - (void) drawInFormat: (CGSize) format;
 @end

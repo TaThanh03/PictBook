@@ -11,9 +11,9 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface MyScrollView : UIView
+@interface MyScrollView : UIView <UIScrollViewDelegate>
 
-@property (nonatomic, retain) UIImageView *imageVIew;
+@property (nonatomic, retain) UIImageView *imageView;
 @property (nonatomic, retain) UIScrollView *scrollVIew;
 
 @end

@@ -26,22 +26,19 @@ CGFloat label_height;
         _labelPercent = [[UILabel alloc]init];
         _toolbar = [[UIToolbar alloc] init];
         _sliderZoom = [[UISlider alloc]init];
-        _scrollViewImage = [[UIScrollView alloc]init];
+        _scrollViewImage = [[UIScrollView  alloc]init];
         _barLabelImage = [[UIBarButtonItem alloc]initWithCustomView:self.labelImage];
         _barButtonNext = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:self.superview action:@selector(actionBarButtonNextTouched:)];
         _barButtonPrevious = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:self.superview action:@selector(actionBarButtonPreviousTouched:)];
-        
-        
+         
         [_labelImage setText:@"nothing"];
         [_labelPercent setText:@"%"];
         [_scrollViewImage setBackgroundColor:UIColor.grayColor];
-        
+
         UIImageView *imageTest = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"photo-1"]];
         [_scrollViewImage addSubview:imageTest];
         [_scrollViewImage setContentSize:CGSizeMake(imageTest.image.size.width, imageTest.image.size.height)];
         [imageTest release];
-        
-        //_barButtonPrevious.width = _barButtonPrevious.width = 10;
         
         NSMutableArray *items = [[NSMutableArray alloc] init];
         [items addObject:[_barButtonPrevious autorelease]];
@@ -95,6 +92,7 @@ CGFloat label_height;
     [_labelPercent  setFrame:CGRectMake( centre - label_width/2, border_head + label_height, 200, label_height)];
     [_scrollViewImage  setFrame:CGRectMake( border_side, border_head + 2*label_height, format.width, format.height - 4.5*label_height)];
     [_sliderZoom  setFrame:CGRectMake( border_side, border_bottom, format.width, label_height)];
+    
 }
 
 @end
