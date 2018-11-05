@@ -12,5 +12,6 @@
 
 - (void) actionBarButtonNextTouched: (UIButton*) sender;
 - (void) actionBarButtonPreviousTouched: (UIButton*) sender;
+- (void) actionSliderTouched: (UISlider*) sender;
 @end
 

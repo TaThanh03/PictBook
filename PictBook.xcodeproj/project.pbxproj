@@ -16,7 +16,6 @@
 		138D59162184AD51005A58CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 138D59152184AD51005A58CA /* main.m */; };
 		138D59202184AD51005A58CA /* PictBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 138D591F2184AD51005A58CA /* PictBookTests.m */; };
 		138D592B2184AD51005A58CA /* PictBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 138D592A2184AD51005A58CA /* PictBookUITests.m */; };
-		138D593A2184AE65005A58CA /* MyRotatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 138D59392184AE65005A58CA /* MyRotatingView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,8 +54,6 @@
 		138D59262184AD51005A58CA /* PictBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PictBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		138D592A2184AD51005A58CA /* PictBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PictBookUITests.m; sourceTree = "<group>"; };
 		138D592C2184AD51005A58CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		138D59382184AE65005A58CA /* MyRotatingView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyRotatingView.h; sourceTree = "<group>"; };
-		138D59392184AE65005A58CA /* MyRotatingView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyRotatingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,8 +113,6 @@
 				138D59112184AD51005A58CA /* LaunchScreen.storyboard */,
 				138D59142184AD51005A58CA /* Info.plist */,
 				138D59152184AD51005A58CA /* main.m */,
-				138D59382184AE65005A58CA /* MyRotatingView.h */,
-				138D59392184AE65005A58CA /* MyRotatingView.m */,
 				132C46A6218B2696005EAE25 /* MyScrollView.h */,
 				132C46A7218B2696005EAE25 /* MyScrollView.m */,
 			);
@@ -272,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				138D593A2184AE65005A58CA /* MyRotatingView.m in Sources */,
 				138D590B2184AD50005A58CA /* ViewController.m in Sources */,
 				138D59162184AD51005A58CA /* main.m in Sources */,
 				132C46A8218B2696005EAE25 /* MyScrollView.m in Sources */,

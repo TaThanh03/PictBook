@@ -7,27 +7,25 @@
 //
 
 #import "ViewController.h"
-#import "MyRotatingView.h"
 #import "MyScrollView.h"
 
 @interface ViewController ()
 
 @end
 
-MyRotatingView *v;
-MyScrollView *scrollView;
+MyScrollView *v;
+
+NSArray *myArray;
+NSInteger cpt = 0;
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    v = [[MyRotatingView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    /*
-    CGRect scrollFrame = [[v superview] convertRect:v.scrollViewImage.frame toView:nil];
-    scrollView = [[MyScrollView alloc] initWithFrame:scrollFrame];*/
-    
+    v = [[MyScrollView alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    myArray = [[NSArray arrayWithObjects:@"photo-1", @"photo-2", @"photo-3", @"photo-4", @"photo-5", nil] retain];
+    [v setImageToScrollView:[myArray objectAtIndex:cpt]];
     [v setBackgroundColor:[UIColor whiteColor]];
     [self setView:v];
     [v release]; //because setView opperation has increase reference counter
@@ -37,10 +35,20 @@ MyScrollView *scrollView;
 }
 
 - (void) actionBarButtonNextTouched: (UIBarButtonItem*) sender{
-    NSLog(@"tick");
+    if (cpt < [myArray count]-1) {
+        cpt += 1;
+        [v setImageToScrollView:[myArray objectAtIndex:cpt]];
+        
+    }
 }
 - (void) actionBarButtonPreviousTouched: (UIBarButtonItem*) sender{
-    NSLog(@"tick");
+    if (cpt > 0) {
+        cpt -= 1;
+        [v setImageToScrollView:[myArray objectAtIndex:cpt]];
+    }
+}
+- (void) actionSliderTouched:(UISlider *) sender{
+    [v setImageScale];
 }
 
 @end
