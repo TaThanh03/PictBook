@@ -127,7 +127,7 @@ CGFloat label_height;
     [_visualEffectView  setFrame:CGRectMake( border_side, border_head, format.width - 2*border_side, label_height*2)];
     [_toolbar  setFrame:CGRectMake( border_side, border_head, format.width - 2*border_side, label_height)];
     [_labelPercent  setFrame:CGRectMake( centre - label_width/2, border_head + label_height, 240, label_height)];
-    [_scrollVIew  setFrame:CGRectMake( border_side, border_head, format.width, format.height - border_head )];
+    [_scrollVIew  setFrame:CGRectMake( border_side, border_head, format.width, format.height )];
     [_sliderZoom  setFrame:CGRectMake( border_side, border_bottom, format.width, label_height)];
 }
 

@@ -34,6 +34,10 @@ NSInteger cpt = 0;
     return UIStatusBarStyleDefault;
 }
 
+- (void) viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator {
+    [v drawInFormat:size]; //Implement by MyRotatingView
+}
+
 - (void) actionBarButtonNextTouched: (UIBarButtonItem*) sender{
     if (cpt < [myArray count]-1) {
         cpt += 1;

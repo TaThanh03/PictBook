@@ -27,6 +27,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, retain)  UIVisualEffectView *visualEffectView;
 
 
+- (void) drawInFormat: (CGSize) format;
 - (void) setImageToScrollView: (NSString *) image;
 - (void) setPercent;
 - (void) setImageScale;
